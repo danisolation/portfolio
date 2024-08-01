@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forsaken</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Forsaken</h1>
+    </header>
+
+    <section id="introduction">
+      <h2>Introduction</h2>
+      <p>
+        This project, developed by students of the Ho Chi Minh City University
+        of Technology, aims to create a smart home monitoring and control
+        system. This system leverages advanced technologies to provide users
+        with convenient, efficient, and secure control over their home
+        environment.
+      </p>
+      <p>
+        The rapid development of information technology and artificial
+        intelligence enables the creation of a comfortable, safe, and secure
+        living environment by maximizing the use of smart devices and sensors.
+      </p>
+    </section>
+
+    <section id="features">
+      <h2>Features</h2>
+      <ul>
+        <li>
+          <strong>Device Monitoring:</strong> Monitor the status of various
+          devices in the house, including lights, air conditioners, fans,
+          security cameras, automatic doors, temperature sensors, humidity
+          sensors, motion sensors, and fire detectors.
+        </li>
+        <li>
+          <strong>Device Control:</strong> Control home devices, allowing users
+          to turn lights on/off, adjust temperatures, open doors, turn on TVs,
+          close curtains, etc.
+        </li>
+        <li>
+          <strong>Automation:</strong> Automate devices by setting schedules and
+          rules for device operation, helping users save time and energy.
+        </li>
+        <li>
+          <strong>Security Alerts:</strong> Provide security alerts and
+          protection, allowing users to detect and notify security incidents
+          such as intrusions, fires, or gas leaks.
+        </li>
+      </ul>
+    </section>
+
+    <section id="img">
+      <h2>Illustration</h2>
+
+      <div class="ex">
+        <img src="webdashboard.PNG" alt="Dashboard" />
+        <p>Dashboard</p>
+      </div>
+      <div class="ex">
+        <img src="sensorweb.PNG" alt="sensor" />
+        <p>Sensor Data</p>
+      </div>
+      <div class="ex">
+        <img src="conditionerweb.PNG" alt="conditioner" />
+        <p>Device Manager - Conditioner</p>
+      </div>
+    </section>
+
+    <section id="setup">
+      <h2>Setup Instructions</h2>
+      <p>
+        To get started with Forsaken, follow
+        these steps:
+      </p>
+      <h3>Server Setup</h3>
+      <ol>
+        <li>Ensure Node.js is installed on your machine.</li>
+        <li>
+          Install the necessary node_modules by running
+          <code>npm install</code>.
+        </li>
+        <li>
+          Add the AIO Key to the <code>.env</code> file:
+          <pre>ADAFRUIT_IO_KEY=aio_ljBu99Bbwyp1IWN71RRPhrTgWgBk</pre>
+        </li>
+        <li>
+          Start the server by running <code>node app.js</code>. The server will
+          run on PORT 8080.
+        </li>
+      </ol>
+      <h3>Web App Setup</h3>
+      <ol>
+        <li>
+          Add the AIO Key to the <code>.env</code> file:
+          <pre>REACT_APP_KEY=aio_ljBu99Bbwyp1IWN71RRPhrTgWgBk</pre>
+        </li>
+        <li>
+          Start the web app by running <code>npm start</code>. The app will run
+          on <a href="http://localhost:3000">http://localhost:3000</a>.
+        </li>
+      </ol>
+    </section>
+
+    <section id="source-code">
+      <h2>Source Code</h2>
+      <p>Access the source code for the project:</p>
+      <ul>
+        <li>
+          <a href="https://github.com/danisolation/FORSAKEN">Web Server</a>
+        </li>
+        <li><a href="https://github.com/danisolation/app">Web App</a></li>
+      </ul>
+    </section>
+  </body>
+</html>
