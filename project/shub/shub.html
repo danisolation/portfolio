@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Shub</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Shub</h1>
+    </header>
+
+    <section id="introduction">
+      <h2>Introduction</h2>
+
+      <p>
+        Shub is a document storage and management system built on the Blockchain
+        platform, providing a secure and transparent solution for managing your
+        organization's confidential documents.
+      </p>
+
+      <p>
+        The need for storage has emerged and existed in human society since the
+        early days of mankind, when civilization was just beginning to emerge.
+        In today's modern society, the need for storage has become an essential
+        issue for individuals and even more important for organizations. Each
+        organization has important documents that need to be kept confidential.
+        However, the platforms and systems that organizations often use today
+        still rely on third parties, leading to a lack of transparency,
+        difficulty in control, and the risk of data leakage.
+      </p>
+    </section>
+
+    <section id="features">
+      <h2>Features</h2>
+
+      <ul>
+        <li>
+          <strong>User Management:</strong> Create, manage, and assign
+          permissions to user accounts within the organization.
+        </li>
+
+        <li>
+          <strong>Document Management:</strong> Securely store, organize, and
+          manage digital documents, ensuring confidentiality and integrity.
+        </li>
+
+        <li>
+          <strong>Folder Management:</strong> Create and organize folders to
+          categorize and structure documents efficiently.
+        </li>
+
+        <li>
+          <strong>Sharing and Collaboration:</strong> Share documents securely
+          with other users within the organization, facilitating collaboration
+          and teamwork.
+        </li>
+      </ul>
+    </section>
+
+    <section id="img">
+      <h2>Illustration</h2>
+
+      <div class="ex">
+        <img src="MainScreen.png" alt="MainScreen" />
+        <p>Main Screen</p>
+      </div>
+
+      <div class="ex">
+        <img src="Setting.png" alt="Setting" />
+        <p>Setting</p>
+      </div>
+
+      <div class="ex">
+        <img src="UserManage.png" alt="UserManage" />
+        <p>User Management</p>
+      </div>
+    </section>
+
+    <section id="setup">
+      <h2>Setup Instructions</h2>
+
+      <p>To get started with Shub, follow these steps:</p>
+
+      <h3>Prerequisites</h3>
+      <ul>
+        <li>
+          https://hyperledger-fabric.readthedocs.io/en/release-2.5/prereqs.html
+        </li>
+      </ul>
+
+      <h3>Run network</h3>
+      <ul>
+        <li><code>cd test-network</code></li>
+        <li><code>./network.sh down</code></li>
+        <li>
+          <code>./network.sh up createChannel -c mychannel -ca -s couchdb</code>
+        </li>
+        <li>
+          <code
+            >./network.sh deployCC -ccn basic -ccp ../shub/back-end/chaincode/
+            -ccl typescript
+          </code>
+        </li>
+      </ul>
+
+      <h3>Run IPFS</h3>
+      <ul>
+        <li><code>cd ipfs-network</code></li>
+        <li><code>./network.sh down</code></li>
+        <li>
+          <code>./network.sh up</code>
+        </li>
+      </ul>
+
+      <h3>Run API</h3>
+      <ul>
+        <li><code>cd shub/back-end/api</code></li>
+        <li><code>npm install</code></li>
+        <li>
+          <code>npm run start or npm run start:dev (for hot reload)</code>
+        </li>
+      </ul>
+
+      <h3>Run Front-end</h3>
+      <ul>
+        <li><code>cd shub/front-end</code></li>
+        <li><code>npm install</code></li>
+        <li>
+          <code>npm run dev</code>
+        </li>
+      </ul>
+    </section>
+
+    <section id="source-code">
+      <h2>Source Code</h2>
+
+      <p>Access the source code for the project:</p>
+
+      <ul>
+        <li>
+          <a href="https://github.com/AKflower/Shub">Web App</a>
+        </li>
+      </ul>
+    </section>
+  </body>
+</html>

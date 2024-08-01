@@ -1,0 +1,451 @@
+/* Đặt font và màu sắc toàn trang */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f9;
+}
+
+/* Định dạng cho tiêu đề và slogan */
+header {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+/* Định dạng thanh điều hướng  */
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #444;
+    border-radius: 5px;
+}
+
+/* Định dạng cho các section */
+section {
+    padding: 60px 20px;
+    margin: 20px 0;
+}
+
+#about{
+    padding: 60px 20px;
+    background-color: #f9f9fb;
+}
+
+section h2 {
+    text-align: center;
+    color: #667eea;
+    margin-bottom: 40px;
+}
+
+section p,
+section ul,
+section .project,
+section .job {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.project,
+.job {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Định dạng cho phần liên hệ */
+#contact p {
+    text-align: center;
+}
+
+/* Định dạng cho footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+}
+
+#about p {
+    padding: 1em;
+}
+
+/* Phần Kỹ Năng */
+#skills {
+    padding: 60px 20px;
+    background-color: #f9f9fb;
+}
+
+#skills h2 {
+    text-align: center;
+    color: #667eea;
+    margin-bottom: 40px;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.skill {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.skill h3 {
+    color: #764ba2;
+    margin-bottom: 10px;
+}
+
+.skill ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skill li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.skill li i {
+    font-size: 36px;
+    /* Tăng kích thước biểu tượng */
+    margin-right: 10px;
+    transition: transform 0.3s;
+    /* Thêm hiệu ứng khi hover */
+}
+
+.skill li i:hover {
+    transform: scale(1.1);
+    /* Hiệu ứng phóng to khi hover */
+}
+
+.skill li span {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+
+/* Phần Dự Án */
+#projects {
+    padding: 60px 20px;
+    background-color: #f9f9fb;
+}
+
+#projects h2 {
+    text-align: center;
+    color: #667eea;
+    margin-bottom: 40px;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-info h3 {
+    color: #764ba2;
+    margin-bottom: 10px;
+}
+
+.project-description {
+    font-size: 1em;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.project-details {
+    list-style: none;
+    padding: 0;
+    font-size: 0.9em;
+}
+
+.project-details li {
+    margin-bottom: 5px;
+}
+
+.project-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.project-card:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+/* Phần Học Vấn */
+#education {
+    padding: 60px 20px;
+    background-color: #f4f4f9;
+}
+
+#education h2 {
+    text-align: center;
+    color: #667eea;
+    margin-bottom: 40px;
+}
+
+.education-container {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.education-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.education-item:hover {
+    transform: translateY(-5px);
+}
+
+.education-item h3 {
+    color: #764ba2;
+    margin-bottom: 5px;
+}
+
+.degree {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.timeframe {
+    font-size: 0.9em;
+    color: #999;
+    margin-bottom: 15px;
+}
+
+.courses,
+.projects,
+.achievements {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.courses ul,
+.projects ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.achievements {
+    font-weight: bold;
+}
+
+body {
+    background-color: #f0f0f5;
+    color: #212529;
+}
+
+header {
+    background: linear-gradient(135deg, #007bff, #28a745);
+}
+
+section h2 {
+    color: #007bff;
+}
+
+nav {
+    background-color: #333;
+    padding: 30px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.menu-toggle {
+    display: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-list {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        text-align: center;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: transform 0.3s ease;
+    }
+
+    nav:hover .nav-list,
+    nav:focus-within .nav-list {
+        transform: scaleY(1);
+    }
+
+    .nav-list li {
+        margin: 10px 0;
+    }
+}
+
+/* Contact Section Styling */
+#contact {
+    background-color: #f4f4f9;
+    /* Light background color */
+    padding: 60px 20px;
+    text-align: center;
+    /* Center align all content */
+}
+
+#contact h2 {
+    color: #667eea;
+    /* Purple heading color */
+    margin-bottom: 20px;
+}
+
+#contact p {
+    line-height: 1.6;
+    /* Adjust line height for better readability */
+    margin-bottom: 20px;
+}
+
+#contact ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+#contact li {
+    margin-bottom: 10px;
+}
+
+#contact li strong {
+    font-weight: bold;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a {
+    color: #333;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #667eea;
+}
+
+#contact ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+#contact li {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
